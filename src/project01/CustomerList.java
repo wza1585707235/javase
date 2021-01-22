@@ -19,7 +19,7 @@ public class CustomerList {
                 return true;
             }
         }
-        return false;//全部循环完代表数组满了
+        return false;
     }
 
 
@@ -39,6 +39,7 @@ public class CustomerList {
         } else {
             for (int i = index; i < customers.length - 1; i++) {
                 customers[i] = customers[i + 1];
+//                customers[i].setId(customers[i].getId()-1);
             }
             customers[customers.length - 1] = null;
         }

@@ -7,6 +7,7 @@ public class Customer {
     private int age;
     private String phone;
     private String email;
+    private static int count=0;
 
     public int getId() {
         return id;
@@ -60,8 +61,8 @@ public class Customer {
 
     }
 
-    public Customer(int id, String name, char gender, int age, String phone, String email) {
-        this.id = id;
+    public Customer(String name, char gender, int age, String phone, String email) {
+        id = ++count;
         this.name = name;
         this.gender = gender;
         this.age = age;
