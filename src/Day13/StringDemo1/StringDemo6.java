@@ -18,8 +18,8 @@ public class StringDemo6 {
         //根据@进行分割
         String[] strings=str.split("@");
         System.out.println(Arrays.toString(strings));
-        str="ab1c2def3g";
-        System.out.println(Arrays.toString(str.split("\\D")));
+        str="123456789";
+        System.out.println(str.split("\\D"));
 
     }
 }
