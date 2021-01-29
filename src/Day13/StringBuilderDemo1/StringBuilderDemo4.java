@@ -3,6 +3,8 @@ package Day13.StringBuilderDemo1;
 String类的面试题2：
     注意事项：在程序中，如果string类型的变量被final关键字修饰，且是直接赋字面值的方式，不可以先定义后赋值，JVM会把这个字符串的量当作字面值常量进行使用，可以应用常量池的优化机制
 
+    如果进行数学运算的话，字面值常量会在编译时运算出结果再进行编译
+
  */
 public class StringBuilderDemo4 {
     public static final String s1="HelloWorld";

@@ -14,7 +14,5 @@ public class StringBuilderDemo5 {
         String s2="b";
         String s3="c";
         String s4=s1+s2+s3;//内存中有五个对象，a b c 在常量池s1+s2在堆里面开辟了一个新空间，s1+s2的结果+s3在开辟了一个新空间
-
-
     }
 }
