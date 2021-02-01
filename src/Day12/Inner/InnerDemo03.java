@@ -22,4 +22,20 @@ package Day12.Inner;
          在其他方法中，无法进行访问，需要在局部内部类所在的方法中进行访问
  */
 public class InnerDemo03 {
+    private int age=20;
+    int ff=20;
+    public void method(){
+        int a=10;
+        int b=20;
+        String str="asss";
+        class inner{
+            int a=10;
+            public void tesy(){
+                System.out.println(age);
+                System.out.println(a=10);
+            }
+        }
+    }
+
 }
+

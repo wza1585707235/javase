@@ -9,8 +9,8 @@ public class IntegerDemo3 {
         int num02=100;
         System.out.println(num01 == num02);
 
-        Integer num03=new Integer(200);
-        Integer num04=new Integer(200);
+        Integer num03=new Integer(100);
+        Integer num04=new Integer(100);
         System.out.println(num03 == num04);
 
         Integer num05=300;//先在常量池中找有没有300的值，没有，超出范围了，在堆里面new
