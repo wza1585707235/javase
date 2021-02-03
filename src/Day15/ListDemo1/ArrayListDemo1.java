@@ -1,4 +1,7 @@
 package Day15.ListDemo1;
+
+import java.util.ArrayList;
+
 /*
 类的特点
     1.具有List集合接口通用的特点
@@ -31,5 +34,7 @@ package Day15.ListDemo1;
 public class ArrayListDemo1 {
     public static void main(String[] args) {
         String s;
+        ArrayList<String>arrayList=new ArrayList<>();
+        arrayList.add("123");
     }
 }
