@@ -24,7 +24,7 @@ HashMap源码分析
 第一次添加元素：
     1.重新计算hashcode值，得到新的hash值
         主要是以键的hashcode值的二进制和这个二进制的高16位进行按位异或
-            让高16位进行参与运算可以进一步降低hashcode的重合概率
+            让高16位进行参与运算可以进一步降低hashcode的重合概率                   ！！！！！！！！！得到的索引值更加的分散
     ++++++++++++从put进入到putval，进入到hash(key)    return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
     2.执行putval方法()
         第一个if  if ((tab = table) == null || (n = tab.length) == 0)
