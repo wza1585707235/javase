@@ -65,4 +65,10 @@ public修饰的内容在同一个项目中都有效
 
  */
 public class ExtendsDemo2 {
+    public static void main(String[] args) {
+        int[] array=new int[]{1,2,3,4,5};
+        System.out.println(array);
+        char[] chars=new char[]{'a','b'};
+        System.out.println(chars);
+    }
 }

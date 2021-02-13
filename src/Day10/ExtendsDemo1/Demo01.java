@@ -56,7 +56,6 @@ super的第二种用法：
 public class Demo01 {
     public static void main(String[] args) {
         Cat cat=new Cat();
-//        cat.eat();
         cat.catchmouse();
     }
 }

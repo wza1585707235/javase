@@ -1,4 +1,7 @@
 package day08.Scanner;
+
+import java.util.Scanner;
+
 /*
 scanner类：类的特点：针对基本数据类型和字符串类型实现键盘录入的工具类
            类的位置：util
@@ -17,4 +20,21 @@ scanner类：类的特点：针对基本数据类型和字符串类型实现键�
            2.next()遇到空白符号不再进行录入
  */
 public class scanner01 {
+    public static void main(String[] args) {
+        //创建Scanner对象
+        Scanner sc = new Scanner(System.in);
+        //进行字符串的键盘录入
+        System.out.println("请键盘录入一个字符串");
+        String str1 = sc.next();//"123"
+        System.out.println("str1 = " + str1);
+
+        //sc = new Scanner(System.in);
+
+		System.out.println("请键盘录入一个字符串");
+		String str2 = sc.nextLine();
+		System.out.println("str2 = " + str2);
+        System.out.println(str2==null);
+        //关闭资源
+        sc.close();
+    }
 }
