@@ -28,8 +28,10 @@ public class Demo1 {
 
         //写出数据 对象
         Student student1 = new Student("张三", 18);
-        objectOutputStream.writeObject(student1);
+        Student student2=new Student("李四",20);
 
+        objectOutputStream.writeObject(student1);
+        objectOutputStream.writeObject(student2);
         objectOutputStream.close();
     }
 }

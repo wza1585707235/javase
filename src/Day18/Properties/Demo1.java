@@ -30,15 +30,22 @@ import java.util.Set;
  */
 public class Demo1 {
     public static void main(String[] args) throws IOException {
+//        Properties properties=new Properties();
+//        properties.load(new FileInputStream("pro.properties"));
+////        Set<Object> keyset = properties.keySet();
+////        for (Object o : keyset) {
+////            System.out.println(o);
+////        }
+//        Set<String> strings = properties.stringPropertyNames();
+//        for (String string : strings) {
+//            System.out.println(properties.getProperty(string));
+//        }
         Properties properties=new Properties();
         properties.load(new FileInputStream("pro.properties"));
-//        Set<Object> keyset = properties.keySet();
-//        for (Object o : keyset) {
-//            System.out.println(o);
-//        }
-        Set<String> strings = properties.stringPropertyNames();
-        for (String string : strings) {
-            System.out.println(string+properties.getProperty(string));
+        Set<String> stringPropertyNames = properties.stringPropertyNames();
+        System.out.println(stringPropertyNames);
+        for (String stringPropertyName : stringPropertyNames) {
+            System.out.println(properties.getProperty(stringPropertyName));
         }
     }
 }

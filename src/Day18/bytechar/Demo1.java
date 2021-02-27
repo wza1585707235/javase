@@ -1,6 +1,7 @@
 package Day18.bytechar;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 /*
 字符编码:
@@ -29,14 +30,16 @@ OutputStreamWriter
  */
 public class Demo1 {
     public static void main(String[] args) throws IOException {
-
+        FileReader fileReader=new FileReader("a.txt");
         test02();
     }
 
     public static void test02() throws IOException {
         InputStreamReader inputStreamReader=new InputStreamReader(new FileInputStream("D:\\DataScience\\gbk.txt"),"gbk");
-        OutputStreamWriter outputStreamWriter=new OutputStreamWriter(new FileOutputStream("D:\\DataScience\\utf8.txt"));
+        OutputStreamWriter outputStreamWriter=new OutputStreamWriter(new FileOutputStream("D:\\DataScience\\utf8.txt"),"gbk");
         int len;
+        System.out.println(inputStreamReader.getEncoding());
+        System.out.println(outputStreamWriter.getEncoding());
         while ((len=inputStreamReader.read())!=-1){
             outputStreamWriter.write(len);
         }

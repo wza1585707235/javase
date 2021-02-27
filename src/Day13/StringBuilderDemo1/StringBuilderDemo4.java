@@ -30,5 +30,7 @@ public class StringBuilderDemo4 {
 
         System.out.println(s1 == (s3 + s4));//true s3+s4在常量池，在编译时已经合并好了
         System.out.println(s5 == (s7 + s8));//false s7+s8地址值在堆，运行时开辟的
+        String intern = "12".intern();
+        System.out.println(intern);
     }
 }

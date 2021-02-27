@@ -1,4 +1,7 @@
 package Day12.Inner;
+
+import java.util.Stack;
+
 /*
 内部类：在一个类中，定义另外的一个类
 学习：内部类的目的：为了学习匿名内部类
@@ -34,4 +37,12 @@ package Day12.Inner;
                       3.在内部类中不可以定义静态成员，如果想定义静态成员，需要使用静态内部类（因为实例内部类随着对象而加载，实例内部类随着类而加载）
  */
 public class InnerDemo01 {
+    public class InnerDemo01inner{
+        Stack<Integer> stack=new Stack<>();
+
+    }
+
+    public static void main(String[] args) {
+        Stack<Integer> stack=new Stack<>();
+    }
 }

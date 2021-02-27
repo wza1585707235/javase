@@ -1,5 +1,6 @@
 package Day16.HashSetDemo;
 
+import java.util.Iterator;
 import java.util.LinkedHashSet;
 
 /*
@@ -24,5 +25,9 @@ public class LinkedHashSetDemo1 {
         linkedHashSet.add("cab");
         linkedHashSet.add("cba");
         System.out.println(linkedHashSet);
+        Iterator iterator=linkedHashSet.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
     }
 }

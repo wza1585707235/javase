@@ -19,4 +19,20 @@ final关键字：
             如果是先定义后赋值的话，需要在唯一的静态代码块中进行赋值
  */
 public class finalDemo1 {
+    private final int number;
+    private static final int number1;
+    public finalDemo1(){
+        number=10;
+    }
+    public finalDemo1(String s){
+        number=20;
+    }
+    static {
+        number1=20;
+    }
+
+    public static void main(String[] args) {
+        int a;
+        a=20;
+    }
 }

@@ -36,5 +36,6 @@ public class ArrayListDemo1 {
         String s;
         ArrayList<String>arrayList=new ArrayList<>();
         arrayList.add("123");
+
     }
 }

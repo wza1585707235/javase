@@ -18,6 +18,7 @@ TreeSet类
                 自定义类型：必须定义比较器，否则编译报错
             定制排序comparator接口
         5.TreeSet不可以存储null元素，会引发空指针异常
+        6.TreeSet不是线程安全的，效率高
 
 
     类的位置：
@@ -25,6 +26,7 @@ TreeSet类
     类的方法：
  */
 public class TreeSetDemo1 {
+    TreeSet<Integer> treeSet=new TreeSet<>();
     public static void main(String[] args) {
         TreeSet<String> set = new TreeSet<>();
         set.add("abc");

@@ -38,7 +38,7 @@ public class Demo2 {
                 System.out.println(file2);
             }
         }
-        show(file1);
+        //show(file1);
 
     }
 

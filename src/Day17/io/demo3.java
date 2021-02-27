@@ -12,7 +12,7 @@ import java.io.IOException;
  */
 public class demo3 {
     public static void main(String[] args) throws IOException {
-        FileOutputStream fileOutputStream=new FileOutputStream("a.txt",true);
+        FileOutputStream fileOutputStream=new FileOutputStream("a.txt",false);
 
         //回车换行的操作
         fileOutputStream.write("\r\n".getBytes());

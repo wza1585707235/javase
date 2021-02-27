@@ -1,4 +1,8 @@
 package Day15.CollectionDemo1;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
 /*
 集合：可以存储同一种数据类型多个元素的大小可变的容器
 集合和数组的区别：
@@ -25,4 +29,8 @@ package Day15.CollectionDemo1;
 
  */
 public class Demo1 {
+    public static void main(String[] args) {
+
+
+    }
 }

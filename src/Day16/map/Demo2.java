@@ -23,6 +23,7 @@ public class Demo2 {
         for (Map.Entry<String, String> entry : entries) {
             System.out.println(entry.getKey()+entry.getValue());
         }
+        System.out.println(map.entrySet());
     }
 
 }

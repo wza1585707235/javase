@@ -14,7 +14,7 @@ split 返回值字符串数组
  */
 public class StringDemo6 {
     public static void main(String[] args) {
-        String str="abc@de@fg";
+        String str="abc@de@@fg";
         //根据@进行分割
         String[] strings=str.split("@");
         System.out.println(Arrays.toString(strings));

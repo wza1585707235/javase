@@ -3,7 +3,7 @@ package Day18.Object;
 import java.io.Serializable;
 
 public class Student implements Serializable {
-    private  String nane;
+    private  transient String nane;
 
     public Student() {
     }

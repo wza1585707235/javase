@@ -22,9 +22,8 @@ public class Demo3 {
         System.out.println(list);
         for (int i = 0; i < list.size(); i++) {
             if ("100元".equals(list.get(i))){
-//                list.remove("100元");
-//                i--;
-                list.set(i,null);
+                list.remove("100元");
+                i--;
             }
         }
         System.out.println(list);

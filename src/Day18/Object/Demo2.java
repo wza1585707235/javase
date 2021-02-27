@@ -29,7 +29,9 @@ public class Demo2 {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         ObjectInputStream objectInputStream=new ObjectInputStream(new FileInputStream("object.txt"));
         Object obj=objectInputStream.readObject();
+        Object obj1=objectInputStream.readObject();
         System.out.println(obj);
+        System.out.println(obj1);
         objectInputStream.close();
     }
 }

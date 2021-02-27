@@ -1,4 +1,9 @@
 package Day15.CollectionDemo1;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+
 /*
 集合的遍历Iterator
     类的特点：
@@ -18,4 +23,15 @@ ConcurrrentModificationException
     注意事项：集合通过迭代器进行便利的时候，不要对集合做任何修改，可能会产生并发修改异常
  */
 public class Demo2 {
+    public static void main(String[] args) {
+        Collection collection=new ArrayList();
+        collection.add(1);
+        collection.add(2);
+        collection.add(3);
+        Iterator iterator=collection.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+
+    }
 }
